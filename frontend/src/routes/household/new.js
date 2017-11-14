@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 import { Link } from 'preact-router/match';
-import style from '../signup/style';
+import style from './style';
 
 export default class AddHousehold extends Component {
     handleClick = (e) => {
@@ -33,6 +33,7 @@ export default class AddHousehold extends Component {
     render() {
       return (
         <div className="add-household">
+        <div class={style.newhousehold}>
           <br/>
           <h2>Add A New Household</h2>
           <br/>
@@ -44,6 +45,7 @@ export default class AddHousehold extends Component {
             Zip Code: <input ref={e => this.zipcode = e} type="integer"/><br/>
             <input type="submit" value="Add Household"/>
           </form>
+          </div>
         </div>
       )
     }

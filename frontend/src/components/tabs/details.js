@@ -3,6 +3,7 @@ import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 import Household from '../../routes/household';
 import axios from 'axios';
+import style from '../../routes/household/style'
 
 
 class Details extends Component {
@@ -24,10 +25,10 @@ class Details extends Component {
 
 	render() {
 			return (
-				<div>
-					<Household household="DBC House" />
+				<div class={style.newhousehold}>
+					<h6><Household household="DBC House" /></h6>
           <div>
-            <h2> Your list of Households </h2>
+          <br />
             {this.state.households.map( (household) => {
               return (
                 <div>
