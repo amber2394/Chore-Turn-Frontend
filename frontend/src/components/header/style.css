@@ -33,16 +33,18 @@
 	min-width: 50px;
 	text-align: center;
 	background: rgba(255,255,255,0);
+	/*background-color: white;*/
 	text-decoration: none;
-	color: #FFF;
+	color: #D1C277;
 	will-change: background-color;
 }
 
 .header nav a:hover,
 .header nav a:active {
-	background: rgba(0,0,0,0.2);
+	/*background: rgba(0,0,0,0.2);*/
+	color: #BABBD1;
 }
 
 .header nav a.active {
-	background: rgba(0,0,0,0.4);
+	/*background: rgba(0,0,0,0.4);*/
 }

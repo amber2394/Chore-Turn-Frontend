@@ -1,5 +1,5 @@
 .dashboard {
-  background-color: #ABE8E5;
+  background-color: #5CD1CB;
   /*opacity: 0.2;*/
 }
 
@@ -13,4 +13,8 @@
 .title {
   color: white;
   font-size: 15pt;
+}
+
+h2 {
+  text-align: left;
 }

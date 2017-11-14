@@ -29,6 +29,7 @@ export default class DashboardPage extends Component {
       // console.log(household)
       return(
         <div class={style.body}>
+        <h2 style={{color: '#777777'}}> Your Households: </h2>
         {this.state.households.map( (household) => {
           return (
             <div>
@@ -42,7 +43,7 @@ export default class DashboardPage extends Component {
                     </div>
                   </Card.Title>
                 </Card.Primary>
-                   <Card.Subtitle>
+                   <Card.Subtitle style={{color: 'white', textAlign: 'center'}}>
                     {household.address}
                   </Card.Subtitle>
                   </div>
