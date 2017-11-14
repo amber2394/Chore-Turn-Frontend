@@ -18,6 +18,7 @@ import Household from '../routes/household';
 import Logout from '../routes/logout';
 import Details from './tabs/details.js'
 import Members from './tabs/members.js'
+import Chores from './tabs/chores.js'
 
 
 export default class App extends Component {
@@ -48,6 +49,7 @@ export default class App extends Component {
 					<Household path="/household/" household="DBC House"/>
 					<Details path="/household/details" />
 					<Members path="/household/members" />
+					<Chores path="/household/chores" />
 				</Router>
 			</div>
 		);
