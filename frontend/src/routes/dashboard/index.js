@@ -20,6 +20,12 @@ export default class DashboardPage extends Component {
       })
    }
 
+
+///make api call using slack
+//pusher api
+//action cable (allows you to build chats)
+//
+
     render() {
       let household = this.state.household;
       console.log(household)
@@ -29,7 +35,7 @@ export default class DashboardPage extends Component {
           <h2> Your list of Households </h2>
           {this.state.households.map( (household) => {
             return (
-              <Link href={`/households/${household.id}`}>{household.name}</Link>
+              <Link href={`/households/${household.id}`}>{household.name}<br /></Link>
             )
           })}
         </div>

@@ -16,8 +16,10 @@ import AddHousehold from '../routes/household/new';
 import DashboardPage from '../routes/dashboard';
 import Household from '../routes/household';
 import Logout from '../routes/logout';
-import Details from './tabs/details.js'
-import Members from './tabs/members.js'
+import Details from './tabs/details.js';
+import Members from './tabs/members.js';
+import SearchUserForm from "./SearchUserForm";
+import AddUserPage  from "./AddUserPage";
 
 
 export default class App extends Component {
