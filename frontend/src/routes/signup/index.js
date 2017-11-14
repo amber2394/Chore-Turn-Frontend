@@ -25,7 +25,7 @@ class Signup extends Component {
           body: data
         })
         .then( res => res.json())
-        .then( jsonRes => window.location = "/profile")
+        .then( jsonRes => window.location = "/login")
         .catch( err => console.log(err))
     }
 
