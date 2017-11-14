@@ -11,9 +11,9 @@ export default class Header extends Component {
 					<Link activeClassName={style.active} href="/"><h1>Chore-turn</h1></Link>
 
 					<nav>
-						<Link activeClassName={style.active} href="/">Home</Link>
-						<Link activeClassName={style.active} href="/profile">Me!</Link>
-						<Link activeClassName={style.active} href="/household">Add Household</Link>
+						<Link activeClassName={style.active} href="/dashboard">Home</Link>
+						{/* <Link activeClassName={style.active} href="/profile">Me!</Link> */}
+						<Link activeClassName={style.active} href="/household/new">Add Household</Link>
 						<Link activeClassName={style.active} href="/logout">Logout</Link>
 					</nav>
 				</header>
@@ -25,10 +25,8 @@ export default class Header extends Component {
 				<Link activeClassName={style.active} href="/"><h1>Chore-turn</h1></Link>
 
 				<nav>
-					<Link activeClassName={style.active} href="/">Home</Link>
 					<Link activeClassName={style.active} href="/login">Log In</Link>
 					<Link activeClassName={style.active} href="/signup">Sign Up</Link>
-					<Link activeClassName={style.active} href="/profile">Me!</Link>
 				</nav>
 			</header>
 
