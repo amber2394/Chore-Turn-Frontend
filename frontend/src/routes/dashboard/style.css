@@ -1,0 +1,20 @@
+.dashboard {
+  background-color: #5CD1CB;
+  /*opacity: 0.2;*/
+}
+
+.body {
+  padding-top: 15%;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 15pt;
+}
+
+h2 {
+  text-align: left;
+}

@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
-
-
 import { Link } from 'preact-router/match';
+import style from '../signup/style';
+
 
 class Login extends Component {
 
@@ -39,7 +39,7 @@ class Login extends Component {
           sessionStorage.username = jsonRes.username
 
 
-          window.location = '/'
+          window.location = '/dashboard'
         }
       })
       .catch( err => console.log(err))
@@ -47,24 +47,21 @@ class Login extends Component {
 
   render() {
     return (
+      <div class={style.signup}>
       <div className="log-in">
         <br></br>
         <br/>
         <h2>Log In</h2>
         <br/>
-        <input type="submit" value="Log in with Facebook"/>
-        <p> -OR- </p>
         <form onSubmit={this.handleClick} method="get">
-        <ul>
-          <li> Email: <input ref={a => this.email = a} type="text" name="email"/> </li> <br/>
-          <li> Password: <input ref={b => this.password = b} type="password" name="password"/> </li> <br/>
+          Email: <input ref={a => this.email = a} type="text" name="email"/><br/>
+          Password: <input ref={b => this.password = b} type="password" name="password"/><br/>
           <input type="submit" value="Log In"/>
           <br></br>
             <Link activeClassName="password" href="/signup/">Forgot Your Password?</Link>
-
-        </ul>
       </form>
 
+     </div>
      </div>
     );
   }

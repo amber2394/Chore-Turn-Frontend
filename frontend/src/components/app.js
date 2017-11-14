@@ -10,8 +10,8 @@ import Profile from '../routes/profile';
 import Signup from '../routes/signup';
 import Login from '../routes/login';
 import NewUser from '../routes/newuser';
-import AddMember from '../routes/addmember';
-import AddChore from '../routes/addchore';
+import AddMember from '../routes/member';
+import AddChore from '../routes/chore';
 import AddHousehold from '../routes/household/new';
 import DashboardPage from '../routes/dashboard';
 import Household from '../routes/household';
@@ -44,7 +44,7 @@ export default class App extends Component {
 					<NewUser path="/newuser/" />
 					<AddMember path="/addmember/" />
 					<AddChore path="/addchore/:household_id" />
-					<AddHousehold path="/households/new" />
+					<AddHousehold path="/household/new" />
 					<DashboardPage path="/dashboard/" test="test" />
 					<Household path="/household/" household="DBC House"/>
 					<Details path="/household/details" />
