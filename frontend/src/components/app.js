@@ -10,14 +10,9 @@ import Profile from '../routes/profile';
 import Signup from '../routes/signup';
 import Login from '../routes/login';
 import NewUser from '../routes/newuser';
-<<<<<<< HEAD
 import AddMember from '../routes/member';
 import AddChore from '../routes/chore';
-=======
-import AddMember from '../routes/addmember';
-import AddChore from '../routes/addchore';
 import AddHousehold from '../routes/household/new';
->>>>>>> master
 import DashboardPage from '../routes/dashboard';
 import Household from '../routes/household';
 import Logout from '../routes/logout';
