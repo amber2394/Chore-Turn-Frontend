@@ -8,7 +8,7 @@ export default class Header extends Component {
 			return (
 				<header class={style.header}>
 
-					<Link activeClassName={style.active} href="/"><h1>Chore-turn</h1></Link>
+					<Link activeClassName={style.active} href="/"><h1>CHORE TURN</h1></Link>
 
 					<nav>
 						<Link activeClassName={style.active} href="/">Home</Link>
