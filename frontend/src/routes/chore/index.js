@@ -7,11 +7,8 @@ export default class AddChore extends Component {
 		var url = 'http://localhost:3000/households/' + this.props.household_id + '/chores',
 			data = JSON.stringify({
 				chore: {
-					// user_id: sessionStorage.id,
-					// household_id: this.props.household_id,
 					name: this.name.value,
 					duration: this.duration.value,
-					// status: this.status.value,
 					date: this.date.value,
 				}
 			});
@@ -45,7 +42,6 @@ export default class AddChore extends Component {
 				<ul>
 					<li>Chore: <input ref={a => this.name = a} type="text"/></li>
 					<li>Duration: <input ref={b => this.duration = b} type="number"/> Minutes</li>
-					{/* <li>Status: <input ref={c => this.status = c} type="radio"/></li> */}
 					<li>Due Date: <input ref={c => this.date = c} type="date"/></li>
 					<input type="submit" value="Add Chore" />
 				</ul>
