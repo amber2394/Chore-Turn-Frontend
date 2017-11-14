@@ -39,7 +39,7 @@ class Login extends Component {
           sessionStorage.username = jsonRes.username
 
 
-          window.location = '/'
+          window.location = '/dashboard'
         }
       })
       .catch( err => console.log(err))
