@@ -1,0 +1,135 @@
+{
+  "hosting": {
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "**",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, no-cache"
+        },
+        {
+          "key": "Access-Control-Max-Age",
+          "value": "600"
+        }
+      ]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-cache"
+        }
+      ]
+    },
+    {
+      "source": "**/*.chunk.*.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-home.chunk.ac48c.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/profile",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-profile.chunk.0f5a6.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/household",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-household.chunk.f5cc4.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/signup",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-signup.chunk.0847e.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/newuser",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-newuser.chunk.e821d.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/logout",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-logout.chunk.cb80f.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/login",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-login.chunk.3b99c.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/dashboard",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-dashboard.chunk.4fe13.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/addmember",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-addmember.chunk.14826.js>; rel=preload; as=script"
+        }
+      ]
+    },
+    {
+      "source": "/addchore",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</bundle.171d4.js>; rel=preload; as=script, </style.73b67.css>; rel=preload; as=style, </route-addchore.chunk.bae1e.js>; rel=preload; as=script"
+        }
+      ]
+    }
+  ],
+  "public": "build"
+}
+
+}
