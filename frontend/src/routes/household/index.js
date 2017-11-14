@@ -4,6 +4,7 @@ import Tabs from 'preact-material-components/Tabs';
 import 'preact-material-components/Tabs/style.css';
 import { Details } from '../../components/tabs/details';
 import { Members } from '../../components/tabs/members';
+import style from '../signup/style';
 
 
 class Household extends Component {

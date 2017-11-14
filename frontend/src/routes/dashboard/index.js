@@ -4,6 +4,8 @@ import axios from 'axios';
 import Card from 'preact-material-components/Card';
 import 'preact-material-components/Card/style.css';
 import 'preact-material-components/Button/style.css';
+import style from './style';
+
 
 export default class DashboardPage extends Component {
   constructor(props) {
@@ -15,7 +17,6 @@ export default class DashboardPage extends Component {
     componentDidMount(){
      axios.get('http://localhost:3000/households')
      .then(function(response){
-       debugger
          this.setState({households: response.data})
       }.bind(this))
        .catch(function(xhr) {
@@ -27,20 +28,24 @@ export default class DashboardPage extends Component {
       let household = this.state.household;
       // console.log(household)
       return(
-        <div>
+        <div class={style.body}>
         {this.state.households.map( (household) => {
           return (
             <div>
             <br />
               <Card>
+              <div class={style.dashboard}>
                 <Card.Primary>
                   <Card.Title>
-                    <Link href={`/households/${household.id}`}>{household.name}</Link>
+                  <div class={style.title}>
+                    <Link href={`/households/${household.id}`} style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>{household.name}</Link>
+                    </div>
                   </Card.Title>
                 </Card.Primary>
                    <Card.Subtitle>
                     {household.address}
                   </Card.Subtitle>
+                  </div>
               </Card>
               <br/>
             </div>

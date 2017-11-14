@@ -38,7 +38,7 @@ class Signup extends Component {
         // <div>
         //   <Textfield default={true} label="Textarea tag"/>
         // </div>
-        <div id="containter">
+        <div class={style.signup}>
           <div className="sign-up">
             <br></br>
             <br/>

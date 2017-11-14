@@ -1,21 +1,13 @@
-container {
+.signup {
     margin: auto;
-    text-align: center;
     width: 70%;
 }
 
 body {
-    background-color: #D1AF06;
+    background-color: #F1F2EB;
 }
 
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-
-input[type=password] {
+input[type=text], input[type=reset], input[type=password], input[type=integer] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

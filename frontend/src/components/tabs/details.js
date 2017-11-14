@@ -39,6 +39,7 @@ class Details extends Component {
                 <br />
                 {household.zip_code}
                 <br />
+                <br />
                 </div>
               )
             })}

@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
-
-
 import { Link } from 'preact-router/match';
+import style from '../signup/style';
+
 
 class Login extends Component {
 
@@ -47,6 +47,7 @@ class Login extends Component {
 
   render() {
     return (
+      <div class={style.signup}>
       <div className="log-in">
         <br></br>
         <br/>
@@ -60,6 +61,7 @@ class Login extends Component {
             <Link activeClassName="password" href="/signup/">Forgot Your Password?</Link>
       </form>
 
+     </div>
      </div>
     );
   }
