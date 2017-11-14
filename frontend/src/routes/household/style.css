@@ -5,6 +5,7 @@
 
 body {
     background-color: #F1F2EB;
+    height: 100%;
 }
 
 input[type=text], input[type=reset], input[type=password], input[type=integer] {

@@ -26,7 +26,7 @@ class Members extends Component {
 	render() {
 			return (
 				<div class={style.newhousehold}>
-					<Household household="DBC House" />
+					<h6><Household household="DBC House" /></h6>
           <div>
           <br />
             {this.state.households.map( (household) => {
@@ -39,6 +39,7 @@ class Members extends Component {
                 {household.state},
                 <br />
                 {household.zip_code}
+                <br />
                 <br />
                 </div>
               )

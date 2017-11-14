@@ -3,6 +3,7 @@ import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 import Household from '../../routes/household';
 import axios from 'axios';
+import style from '../../routes/household/style'
 
 class Chores extends Component {
   constructor(props) {
@@ -22,19 +23,19 @@ class Chores extends Component {
   }
   render() {
     return (
-      <div>
-        <Household household="DBC House" />
+      <div class={style.newhousehold}>
+        <h6><Household household="DBC House" /></h6>
         <div>
-          <h2> Your list of Chores </h2>
+        <br />
           {this.state.chores.map( (chore) => {
             return (
               <div>
-              {chore.name}
+              Chore: {chore.name}
               <br />
-              {chore.duration}
+              Duration: {chore.duration} minutes
               {chore.status}
               <br />
-              {chore.date}
+              Date Due: {chore.date}
               <br />
               <br />
             </div>
