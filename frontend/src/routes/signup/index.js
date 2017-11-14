@@ -32,19 +32,15 @@ class Signup extends Component {
     render() {
       return (
         <div className="sign-up">
-          <br></br>
           <br/>
           <h2>Sign Up</h2>
-          <br/>
           <form onSubmit={this.handleClick} method="get">
-          <ul>
-            <li> First name: <input ref={a => this.firstName = a} type="text"/> </li> <br/>
-            <li> Last name: <input ref={b => this.lastName = b} type="text"/> </li> <br/>
-            <li> Username: <input ref={ c => this.userName = c} type="text"/> </li> <br/>
-            <li> Email: <input ref={d => this.email = d} type="text"/> </li> <br/>
-            <li> Password: <input ref={e => this.password = e} type="password"/> </li> <br/>
+             <p>First name: <input ref={a => this.firstName = a} type="text"/></p>
+             <p>Last name: <input ref={b => this.lastName = b} type="text"/></p>
+             <p>Username: <input ref={ c => this.userName = c} type="text"/></p>
+             <p>Email: <input ref={d => this.email = d} type="text"/></p>
+             <p>Password: <input ref={e => this.password = e} type="password"/></p>
             <input type="submit" value="Sign Up"/>
-          </ul>
           </form>
         </div>
       )
