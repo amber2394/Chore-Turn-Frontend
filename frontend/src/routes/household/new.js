@@ -1,4 +1,6 @@
 import { h, Component } from 'preact';
+import { Link } from 'preact-router/match';
+import style from '../signup/style';
 
 export default class AddHousehold extends Component {
     handleClick = (e) => {
@@ -31,19 +33,16 @@ export default class AddHousehold extends Component {
     render() {
       return (
         <div className="add-household">
-          <br></br>
           <br/>
           <h2>Add A New Household</h2>
           <br/>
           <form onSubmit={this.handleClick} method="get">
-          <ul>
-            <li> Household name: <input ref={a => this.HouseholdName = a} type="text"/> </li> <br/>
-            <li> Address: <input ref={b => this.address = b} type="text"/> </li> <br/>
-            <li> City: <input ref={c => this.city = c} type="text"/> </li> <br/>
-            <li> State: <input ref={d => this.state = d} type="text"/> </li> <br/>
-            <li> Zip Code: <input ref={e => this.zipcode = e} type="integer"/> </li> <br/>
+            Household name: <input ref={a => this.HouseholdName = a} type="text"/><br/>
+            Address: <input ref={b => this.address = b} type="text"/><br/>
+            City: <input ref={c => this.city = c} type="text"/><br/>
+            State: <input ref={d => this.state = d} type="text"/><br/>
+            Zip Code: <input ref={e => this.zipcode = e} type="integer"/><br/>
             <input type="submit" value="Add Household"/>
-          </ul>
           </form>
         </div>
       )
