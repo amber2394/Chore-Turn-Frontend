@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import { Link } from 'preact-router/match';
 import style from './style';
 
 export default class Home extends Component {
@@ -6,8 +7,12 @@ export default class Home extends Component {
 		if(!sessionStorage.id) {
 			return (
 				<div class={style.home}>
-					<h1>Welcome to Chore Turn!</h1>
-					<h2>Please log in to continue</h2>
+					<h2>Let your messy roommate know their reckoning is coming!</h2>
+					<h4>Chore turn is an app designed by clean folk who are tired of being passive aggressive</h4>
+					<p>This app will do all the work for you!
+					Create a household and add your roommates to it.
+					No longer will you have to leave your roommates notes on the refridgator letting them know you have had enough</p>
+					<h4><Link href="/signup">Sign up</Link> or <Link href="/login">Login</Link> to continue!</h4>
 				</div>
 			)
 		}

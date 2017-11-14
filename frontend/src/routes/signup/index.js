@@ -34,7 +34,6 @@ class Signup extends Component {
 
     render() {
       return (
-
         // <div>
         //   <Textfield default={true} label="Textarea tag"/>
         // </div>
