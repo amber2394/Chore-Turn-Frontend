@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import { Link } from 'preact-router/match';
 
 export default class AddHousehold extends Component {
     handleClick = (e) => {

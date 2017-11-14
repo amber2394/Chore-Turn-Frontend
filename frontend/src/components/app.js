@@ -43,7 +43,7 @@ export default class App extends Component {
 					<NewUser path="/newuser/" />
 					<AddMember path="/addmember/" />
 					<AddChore path="/addchore/:household_id" />
-					<AddHousehold path="/households/new" />
+					<AddHousehold path="/household/new" />
 					<DashboardPage path="/dashboard/" test="test" />
 					<Household path="/household/" household="DBC House"/>
 					<Details path="/household/details" />
