@@ -46,8 +46,8 @@ export default class App extends Component {
 					<AddChore path="/addchore/:household_id" />
 					<AddHousehold path="/household/new" />
 					<DashboardPage path="/dashboard/" test="test" />
-					<Household path="/household/:household_id" />
-					<Details path="/household/details" />
+					<Household path="/household/:household_id/"/>
+					<Details path="/household/:household_id/details/" />
 					<Members path="/household/members" />
 					<Chores path="/household/chores" />
 				</Router>

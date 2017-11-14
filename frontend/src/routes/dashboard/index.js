@@ -39,7 +39,7 @@ export default class DashboardPage extends Component {
                 <Card.Primary>
                   <Card.Title>
                   <div class={style.title}>
-                    <Link href={`/household/${household.id}`} style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>{household.name}</Link>
+                    <Link href={`/household/${household.id}/details`} style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>{household.name}</Link>
                     </div>
                   </Card.Title>
                 </Card.Primary>

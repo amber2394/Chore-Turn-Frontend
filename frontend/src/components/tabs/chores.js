@@ -3,6 +3,9 @@ import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 import Household from '../../routes/household';
 import axios from 'axios';
+import Card from 'preact-material-components/Card';
+import 'preact-material-components/Card/style.css';
+import 'preact-material-components/Button/style.css';
 import style from '../../routes/household/style'
 
 class Chores extends Component {
@@ -30,15 +33,25 @@ class Chores extends Component {
           {this.state.chores.map( (chore) => {
             return (
               <div>
-              Chore: {chore.name}
               <br />
-              Duration: {chore.duration} minutes
-              {chore.status}
-              <br />
-              Date Due: {chore.date}
-              <br />
-              <br />
-            </div>
+                <Card style={{backgroundColor: '#5CD1CB'}}>
+                <div class={style.dashboard}>
+                  <Card.Primary>
+                    <Card.Title style={{color: 'white', textAlign: 'center', fontWeight: 'bold'}}>
+                    <div class={style.title}>
+                      {chore.name}
+                      </div>
+                    </Card.Title>
+                  </Card.Primary>
+                     <Card.Subtitle style={{color: 'black', textAlign: 'center'}}>
+                      Duration: {chore.duration} minutes
+                      <br />
+                      Due Date: {chore.date}
+                    </Card.Subtitle>
+                    </div>
+                </Card>
+                <br/>
+              </div>
             )
           })}
         </div>

@@ -14,7 +14,7 @@ class Household extends Component {
       <div>
         <h1>Household: { household }</h1>
         <Tabs className='demo-tabs' indicator-accent={true}>
-          <Tabs.Tab href="/household/details">Details</Tabs.Tab>
+          <Tabs.Tab href="/household/${household.id}/details">Details</Tabs.Tab>
           <Tabs.Tab href="/household/members">Members</Tabs.Tab>
           <Tabs.Tab href="/household/chores">Chores</Tabs.Tab>
         </Tabs>
