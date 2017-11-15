@@ -23,7 +23,7 @@ export default class AddChore extends Component {
 			body: data
 		})
 		.then( res => res.json())
-		.then( jsonRes => window.location = "/household")
+		.then( jsonRes => window.location = "/household/chores")
 		.catch( err => console.log(err))
 	}
 
