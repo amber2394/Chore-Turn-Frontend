@@ -1,6 +1,9 @@
 import { h, Component } from 'preact';
 // import $ from 'jquery';
 import axios from 'axios';
+import Textfield from 'preact-material-components/Textfield';
+import 'preact-material-components/Textfield/style.css';
+import style from './style';
 
 class Signup extends Component {
     handleClick = (e) => {
@@ -31,21 +34,24 @@ class Signup extends Component {
 
     render() {
       return (
-        <div className="sign-up">
-          <br></br>
-          <br/>
-          <h2>Sign Up</h2>
-          <br/>
-          <form onSubmit={this.handleClick} method="get">
-          <ul>
-            <li> First name: <input ref={a => this.firstName = a} type="text"/> </li> <br/>
-            <li> Last name: <input ref={b => this.lastName = b} type="text"/> </li> <br/>
-            <li> Username: <input ref={ c => this.userName = c} type="text"/> </li> <br/>
-            <li> Email: <input ref={d => this.email = d} type="text"/> </li> <br/>
-            <li> Password: <input ref={e => this.password = e} type="password"/> </li> <br/>
-            <input type="submit" value="Sign Up"/>
-          </ul>
-          </form>
+        // <div>
+        //   <Textfield default={true} label="Textarea tag"/>
+        // </div>
+        <div class={style.signup}>
+          <div className="sign-up">
+            <br></br>
+            <br/>
+            <h2>Sign Up</h2>
+            <br/>
+            <form onSubmit={this.handleClick} method="get">
+               First name: <input ref={a => this.firstName = a} type="text"/><br/>
+               Last name: <input ref={b => this.lastName = b} type="text"/><br/>
+               Username: <input ref={ c => this.userName = c} type="text"/><br/>
+               Email: <input ref={d => this.email = d} type="text"/><br/>
+               Password: <input ref={e => this.password = e} type="password"/><br/>
+              <input type="submit" value="Sign Up"/>
+            </form>
+          </div>
         </div>
       )
     }

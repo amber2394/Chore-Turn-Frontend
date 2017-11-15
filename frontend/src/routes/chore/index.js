@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import { Link } from 'preact-router/match';
 // import style from './style';
 
 export default class AddChore extends Component {
@@ -7,11 +8,8 @@ export default class AddChore extends Component {
 		var url = 'http://localhost:3000/households/' + this.props.household_id + '/chores',
 			data = JSON.stringify({
 				chore: {
-					// user_id: sessionStorage.id,
-					// household_id: this.props.household_id,
 					name: this.name.value,
 					duration: this.duration.value,
-					// status: this.status.value,
 					date: this.date.value,
 				}
 			});
@@ -25,7 +23,7 @@ export default class AddChore extends Component {
 			body: data
 		})
 		.then( res => res.json())
-		.then( jsonRes => window.location = "/household")
+		.then( jsonRes => window.location = "/household/chores")
 		.catch( err => console.log(err))
 	}
 
@@ -36,22 +34,23 @@ export default class AddChore extends Component {
         <br></br>
 				<h1>Add Chores to your household</h1>
 				<br></br>
-				<p>Your added members will receive an invitation email to household [household_name] shortly.</p>
-				<p>In the meantime, try adding a few chores to your household.</p>
+				{/* <p>Your added members will receive an invitation email to household [household_name] shortly.</p> In the meantime, */}
+				<h3> Add a few chores to your household.</h3>
 				{/* <input type="submit" value="Add Chores"/> */}
 				<br></br>
 				<form onSubmit={this.handleSubmit} method="get">
-					<h3>Add Chore</h3>
-				<ul>
-					<li>Chore: <input ref={a => this.name = a} type="text"/></li>
-					<li>Duration: <input ref={b => this.duration = b} type="number"/> Minutes</li>
-					{/* <li>Status: <input ref={c => this.status = c} type="radio"/></li> */}
-					<li>Due Date: <input ref={c => this.date = c} type="date"/></li>
+					{/* <h3>Add Chore</h3> */}
+					Chore: <input ref={a => this.name = a} type="text"/>
+					Duration*: <input ref={b => this.duration = b} type="number"/> mins<br></br>
+					Due Date: <input ref={c => this.date = c} type="date"/>
 					<input type="submit" value="Add Chore" />
-				</ul>
 				</form>
 				<br></br>
-				<input type="submit" value="Back"/>
+				{/* <input type="submit" value="Back"/> */}
+				<Link href="/household/chores">Back</Link>
+				<br></br>
+				<br></br>
+				*optional
 	    </div>
 		);
   }

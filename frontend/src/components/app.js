@@ -12,14 +12,16 @@ import Profile from '../routes/profile';
 import Signup from '../routes/signup';
 import Login from '../routes/login';
 import NewUser from '../routes/newuser';
-import AddMember from '../routes/addmember';
-import AddChore from '../routes/addchore';
+import AddMember from '../routes/member';
+import AddChore from '../routes/chore';
 import AddHousehold from '../routes/household/new';
 import DashboardPage from '../routes/dashboard';
 import Household from '../routes/household';
 import Logout from '../routes/logout';
 import Details from './tabs/details.js';
 import Members from './tabs/members.js';
+import Chores from './tabs/chores.js';
+
 import SignIn from './SignIn';
 
 // import SearchUserForm from "./SearchUserForm";
@@ -49,10 +51,12 @@ export default class App extends Component {
 					<NewUser path="/newuser/" />
 					<AddMember path="/addmember/" />
 					<AddChore path="/addchore/:household_id" />
-					<AddHousehold path="/households/new" />
+					<AddHousehold path="/household/new" />
 					<DashboardPage path="/dashboard/" test="test" />
-					<Household path="/household/" household="DBC House"/>
-					<Details path="/household/details" />
+					<Household path="/household/:household_id/"/>
+					<Details path="/household/:household_id/details/" />
+					<Members path="/household/members" />
+					<Chores path="/household/chores" />
 					<AddUserPage path="/AddUserPage" />
 				</Router>
 			</div>
