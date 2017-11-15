@@ -29,6 +29,7 @@ class Chores extends Component {
       <div class={style.newhousehold}>
         <h6><Household household="DBC House" /></h6>
         <div>
+          <Link activeClassName={style.active} href="/addchore/:household_id">Add Chore</Link>
         <br />
           {this.state.chores.map( (chore) => {
             return (
