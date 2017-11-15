@@ -1,13 +1,12 @@
 import { h, Component } from 'preact';
-
-
 import { Link } from 'preact-router/match';
+// import GoogleLogin from './googleLogin';
+
 
 class Login extends Component {
 
   handleClick = (e) => {
     e.preventDefault();
-    // debugger
     var url = 'http://localhost:3000/login',
       data = JSON.stringify({
         user: {
@@ -52,7 +51,9 @@ class Login extends Component {
         <br/>
         <h2>Log In</h2>
         <br/>
-        <input type="submit" value="Log in with Facebook"/>
+
+        {/* <GoogleLogin/> */}
+
         <p> -OR- </p>
         <form onSubmit={this.handleClick} method="get">
         <ul>
@@ -69,5 +70,5 @@ class Login extends Component {
     );
   }
 }
-
+s
 export default Login;

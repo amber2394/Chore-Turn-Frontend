@@ -2,6 +2,8 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
+import { auth, googleAuthProvider } from './firebase';
+
 import Header from './header';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
@@ -18,8 +20,10 @@ import Household from '../routes/household';
 import Logout from '../routes/logout';
 import Details from './tabs/details.js';
 import Members from './tabs/members.js';
-import SearchUserForm from "./SearchUserForm";
-import AddUserPage  from "./AddUserPage";
+import SignIn from './SignIn';
+
+// import SearchUserForm from "./SearchUserForm";
+import AddUserPage  from "../routes/AddUserPage";
 
 
 export default class App extends Component {
@@ -49,30 +53,9 @@ export default class App extends Component {
 					<DashboardPage path="/dashboard/" test="test" />
 					<Household path="/household/" household="DBC House"/>
 					<Details path="/household/details" />
-					<Members path="/household/members" />
+					<AddUserPage path="/AddUserPage" />
 				</Router>
 			</div>
 		);
 	}
 }
-
-// class ExampleOne extends Component {
-// 	render() {
-// 			return (
-// 				<div>
-// 					<Household household="DBC House" />
-// 					<div>Tab content 1</div>
-// 				</div>
-// 			)
-// 	}
-// }
-
-
-// function ExampleTwo(props) {
-// 	return (
-// 		<div>
-// 			<Household household="DBC House" />
-// 			<div>Tab content 2</div>
-// 		</div>
-// 	)
-// }

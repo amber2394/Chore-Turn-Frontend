@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import { Link } from 'preact-router/match';
 import axios from 'axios';
 
+
 export default class DashboardPage extends Component {
   constructor(props) {
     super(props);
@@ -20,11 +21,6 @@ export default class DashboardPage extends Component {
       })
    }
 
-
-///make api call using slack
-//pusher api
-//action cable (allows you to build chats)
-//
 
     render() {
       let household = this.state.household;

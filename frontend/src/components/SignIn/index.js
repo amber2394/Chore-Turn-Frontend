@@ -2,6 +2,12 @@ import { h, Component } from 'preact';
 import { auth, googleAuthProvider } from '../firebase';
 
 export default class SignIn extends Component {
+	constructor(props){
+		super(props)
+		this.state = {
+			loggin: false
+		}
+	}
 	render() {
 		return (
 			<section>
