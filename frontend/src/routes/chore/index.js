@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import { Link } from 'preact-router/match';
 // import style from './style';
 
 export default class AddChore extends Component {
@@ -45,7 +46,8 @@ export default class AddChore extends Component {
 					<input type="submit" value="Add Chore" />
 				</form>
 				<br></br>
-				<input type="submit" value="Back"/>
+				{/* <input type="submit" value="Back"/> */}
+				<Link href="/household/chores">Back</Link>
 				<br></br>
 				<br></br>
 				*optional
