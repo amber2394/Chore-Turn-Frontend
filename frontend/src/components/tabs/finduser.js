@@ -1,6 +1,6 @@
 
 export default class FindUser extends Component {
-  let users = [{
+  users = [{
     users: {}
   }]
 

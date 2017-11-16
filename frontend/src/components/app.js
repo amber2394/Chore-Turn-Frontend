@@ -2,7 +2,7 @@ import { h, Component } from 'preact';
 import { Router } from 'preact-router';
 import { Link } from 'preact-router/match';
 
-import { auth, googleAuthProvider } from './firebase';
+// import { auth, googleAuthProvider } from './firebase';
 
 import Header from './header';
 import Home from '../routes/home';
@@ -26,6 +26,8 @@ import SignIn from './SignIn';
 
 // import SearchUserForm from "./SearchUserForm";
 import AddUserPage  from "../routes/AddUserPage";
+// import User from './tabs/user';
+// import FindUser from '.tabs/finduser';
 
 
 export default class App extends Component {

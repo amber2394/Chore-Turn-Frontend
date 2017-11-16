@@ -1,5 +1,5 @@
 import { h, Component } from 'preact';
-import { auth } from 'firebase';
+// import { auth } from 'firebase';
 
 
 export default class CurrentUser extends Component {
