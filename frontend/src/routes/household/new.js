@@ -25,7 +25,7 @@ export default class AddHousehold extends Component {
           body: data
         })
         .then( res => res.json())
-        // .then( jsonRes => {debugger})
+        .then( jsonRes => {debugger})
         .then( jsonRes => window.location = "/dashboard")
         .catch( err => console.log(err))
     }

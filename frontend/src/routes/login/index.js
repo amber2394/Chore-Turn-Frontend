@@ -52,13 +52,12 @@ class Login extends Component {
         <br/>
         <h2>Log In</h2>
         <br/>
-<<<<<<< HEAD
+
 
         {/* <GoogleLogin/> */}
 
         <p> -OR- </p>
-=======
->>>>>>> master
+
         <form onSubmit={this.handleClick} method="get">
           Email: <input ref={a => this.email = a} type="text" name="email"/><br/>
           Password: <input ref={b => this.password = b} type="password" name="password"/><br/>
@@ -72,5 +71,5 @@ class Login extends Component {
     );
   }
 }
-s
+
 export default Login;
